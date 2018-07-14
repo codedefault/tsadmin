@@ -86,11 +86,11 @@
 			<el-table-column type="selection" width="45" align="center">
 			</el-table-column>
 			<template v-for="col in showColumns">
-				<el-table-column v-if="col.visible==null || col.visible" :prop="col.prop" :label="col.label" :width="col.width" :min-width="col.minWidth" :sortable="col.sortable">
+				<el-table-column :key="col.id" v-if="col.visible==null || col.visible" :prop="col.prop" :label="col.label" :width="col.width" :min-width="col.minWidth" :sortable="col.sortable">
 				</el-table-column>
 			</template>
 			<el-table-column label="操作">
-				<template scope="scope">
+				<template slot-scope="scope">
 					<el-tooltip class="item" effect="dark" content="编辑" placement="top">
 						<el-button type="in" size="mini" @click="handleEdit(scope.row.id)" icon="edit"></el-button>
 					</el-tooltip>
