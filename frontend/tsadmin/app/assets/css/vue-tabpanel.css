@@ -1,0 +1,102 @@
+.vue-tabpanel {
+  position: relative;
+}
+.tabs-list-wrapper {
+  padding: 2px 8px;
+  background: #fff;
+}
+@keyframes loading-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loading-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.tabs-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+  width: auto;
+  zoom: 1;
+}
+.tabs-list > li {
+  float: left;
+  padding: 6px 18px;
+  position: relative;
+  color: #999;
+}
+.tabs-list > li.loading:before {
+  content: ' ';
+  box-sizing: border-box;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  border-radius: 9px;
+  border: 2px solid #1ab394;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  animation: loading-rotate 0.8s infinite linear;
+  -webkit-animation: loading-rotate 0.8s infinite linear;
+}
+.tabs-list > li.active {
+  color: #333;
+}
+.tabs-list > li.active:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #1ab394;
+  left: 0px;
+}
+.tabs-list > li.active .btn-close {
+  opacity: 1;
+}
+.tabs-list > li:hover {
+  cursor: pointer;
+}
+.tabs-list > li:hover .btn-close {
+  opacity: 1;
+}
+.tabs-list > li .btn-close {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  top: 2px;
+  right: 0px;
+  line-height: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  font-size: 12px;
+  color: #999;
+  transition: all 0.2s ease;
+}
+.tabs-list > li .btn-close:hover {
+  color: #333;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.tabs-content-wrapper {
+  position: relative;
+}
+.tabs-content-wrapper .tabs-content {
+  display: none;
+}
+.tabs-content-wrapper .tabs-content.active {
+  display: block;
+}

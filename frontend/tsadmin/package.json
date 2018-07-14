@@ -1,0 +1,39 @@
+{
+  "name": "Dxpay.Admin",
+  "description": "Dxpay admin dashboard project.",
+  "author": "DxPay Team",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 8860",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.0",
+    "element-ui": "^1.3.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "glob": "^7.1.1",
+    "html-loader": "^0.4.5",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.16.1",
+    "url-loader": "^0.5.8",
+    "vue": "^2.3.0",
+    "vue-loader": "^12.0.2",
+    "vue-resource": "^1.3.1",
+    "vue-tabpanel": "1.3.0",
+    "vue-template-compiler": "2.3.0",
+    "vue2-scrollbar": "^0.0.1",
+    "vuex": "^2.3.1",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "devDependencies": {}
+}
