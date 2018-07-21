@@ -1,7 +1,7 @@
 {
-  "name": "Dxpay.Admin",
-  "description": "Dxpay admin dashboard project.",
-  "author": "DxPay Team",
+  "name": "TsAdmin",
+  "description": "TsAdmin admin dashboard project.",
+  "author": "TsAdmin Team",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --port 8860",
